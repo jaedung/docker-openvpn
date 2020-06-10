@@ -100,6 +100,23 @@ docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME
 docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME remove
 ```
 
+11. Install `tunnelblick` (Mac OS)
+```shell
+brew cask install tunnelblick
+```
+
+12. Drag and drop the downloaded `$CLIENTNAME.ovpn`
+13. Connect VPN
+
+### Tips
+1. Multiple client connections.  
+```shell
+docker-compose run --rm openvpn vi /etc/openvpn/openvpn.conf
+```
+```shell
+duplicate-cn
+```
+
 ### Issues
 1. block-outside-dns.  
 https://github.com/kylemanna/docker-openvpn/issues/330#issuecomment-350983156
