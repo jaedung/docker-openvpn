@@ -109,7 +109,7 @@ brew cask install tunnelblick
 13. Connect VPN
 
 ### Tips
-1. Multiple client connections.  
+- Multiple client connections.  
 ```shell
 docker-compose run --rm openvpn vi /etc/openvpn/openvpn.conf
 ```
@@ -118,7 +118,7 @@ duplicate-cn
 ```
 
 ### Issues
-1. block-outside-dns.  
+- block-outside-dns.  
 https://github.com/kylemanna/docker-openvpn/issues/330#issuecomment-350983156
 
 ### References
